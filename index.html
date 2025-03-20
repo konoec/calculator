@@ -10,26 +10,27 @@
     <div class="calculator">
         <div class="display" id="display">0</div>
         <div class="buttons">
-            <button>C</button>
-            <button>±</button>
-            <button>%</button>
-            <button class="operator">÷</button>
-            <button>7</button>
-            <button>8</button>
-            <button>9</button>
-            <button class="operator">×</button>
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
-            <button class="operator">-</button>
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button class="operator">+</button>
-            <button style="grid-column: span 2;">0</button>
-            <button>.</button>
-            <button class="equals">=</button>
+            <button onclick="clean()">C</button>
+            <button onclick="toggleSign('±')">±</button>
+            <button onclick="percentage('%')">%</button>
+            <button onclick="add('÷')" class="operator">÷</button>
+            <button onclick="add('7')">7</button>
+            <button onclick="add('8')">8</button>
+            <button onclick="add('9')">9</button>
+            <button onclick="add('×')" class="operator">×</button>
+            <button onclick="add('4')">4</button>
+            <button onclick="add('5')">5</button>
+            <button onclick="add('6')">6</button>
+            <button onclick="add('-')" class="operator">-</button>
+            <button onclick="add('1')">1</button>
+            <button onclick="add('2')">2</button>
+            <button onclick="add('3')">3</button>
+            <button onclick="add('+')" class="operator">+</button>
+            <button onclick="add('0')" style="grid-column: span 2;">0</button>
+            <button onclick="add('.')">.</button>
+            <button onclick="calculate()" class="equals">=</button>
         </div>
     </div>
+    <script src="scripts/script.js"></script>
 </body>
 </html>
